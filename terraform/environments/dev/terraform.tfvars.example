@@ -1,5 +1,8 @@
+# Copy this file to terraform.tfvars and fill in your values
+# NEVER commit terraform.tfvars to Git (it's in .gitignore)
+
 aws_region        = "us-east-1"
 environment       = "dev"
 alert_email       = "your-email@example.com"
 slack_webhook_url = "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
-waf_acl_id        = ""
+waf_acl_id        = ""   # Optional: your WAF ACL ID for IP blocking
