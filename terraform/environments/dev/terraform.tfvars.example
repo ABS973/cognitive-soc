@@ -1,0 +1,5 @@
+aws_region        = "us-east-1"
+environment       = "dev"
+alert_email       = "your-email@example.com"
+slack_webhook_url = "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+waf_acl_id        = ""
