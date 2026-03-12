@@ -351,15 +351,6 @@ terraform apply
 
 > Both platforms are designed to feed each other — CognitivePentest attack paths validate CognitiveSOC detection coverage via Purple Team simulation in Phase 04.
 
----
-
-## 💰 Investment
-
-**SecureOps Labs** is currently raising a **$750K pre-seed round** to accelerate development across both platforms.
-
-For investment inquiries, please reach out via [GitHub](https://github.com/ABS973).
-
----
 
 ## 📄 Documentation
 
