@@ -1,0 +1,44 @@
+{
+  "version": "0",
+  "id": "test-event-001",
+  "detail-type": "GuardDuty Finding",
+  "source": "aws.guardduty",
+  "account": "123456789012",
+  "region": "us-east-1",
+  "detail": {
+    "id": "test-finding-001",
+    "type": "PrivilegeEscalation:IAMUser/AnomalousBehavior",
+    "severity": 8.0,
+    "accountId": "123456789012",
+    "region": "us-east-1",
+    "title": "Anomalous privilege escalation activity by IAM user ahmed-dev",
+    "description": "APIs commonly used to escalate privileges were invoked by IAM user ahmed-dev.",
+    "createdAt": "2025-03-13T09:23:00Z",
+    "updatedAt": "2025-03-13T09:23:00Z",
+    "resource": {
+      "resourceType": "AccessKey",
+      "accessKeyDetails": {
+        "userName": "ahmed-dev",
+        "userType": "IAMUser",
+        "principalId": "AIDAEXAMPLEUSER123",
+        "accessKeyId": "AKIAEXAMPLE123"
+      }
+    },
+    "service": {
+      "action": {
+        "actionType": "AWS_API_CALL",
+        "awsApiCallAction": {
+          "api": "AttachUserPolicy",
+          "serviceName": "iam.amazonaws.com",
+          "remoteIpDetails": {
+            "ipAddressV4": "185.220.101.45",
+            "country": { "countryName": "Germany" }
+          }
+        }
+      },
+      "count": 3,
+      "eventFirstSeen": "2025-03-13T09:20:00Z",
+      "eventLastSeen": "2025-03-13T09:23:00Z"
+    }
+  }
+}

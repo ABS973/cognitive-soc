@@ -1,0 +1,39 @@
+{
+  "source": "cognitive_soc_behavioral_dna",
+  "finding": {
+    "id": "behavioral-ahmed-dev-1741860000",
+    "type": "BehavioralAnomaly:IAMUser/DeviationFromBaseline",
+    "severity": 8.0,
+    "account_id": "123456789012",
+    "region": "us-east-1",
+    "title": "Behavioral DNA anomaly detected for ahmed-dev",
+    "description": "Composite anomaly score 91.5/100. Anomalies: unusual time (03:00 UTC); first-time KMS access; unusual action: ScheduleKeyDeletion.",
+    "created_at": "2025-03-13T03:15:00Z"
+  },
+  "anomaly_result": {
+    "scored": true,
+    "entity_id": "ahmed-dev",
+    "entity_type": "IAMUser",
+    "composite_score": 91.5,
+    "dimension_scores": {
+      "temporal_score": 95.0,
+      "geo_score": 0.0,
+      "service_score": 95.0,
+      "action_score": 90.0,
+      "sequence_score": 65.0
+    },
+    "severity": "CRITICAL",
+    "signal": {
+      "timestamp": "2025-03-13T03:15:00Z",
+      "service": "kms",
+      "action": "ScheduleKeyDeletion",
+      "aws_region": "us-east-1",
+      "source_ip": "185.220.101.45",
+      "hour_of_day": 3,
+      "success": true
+    },
+    "timestamp": "2025-03-13T03:15:00Z",
+    "observations": 4823
+  },
+  "escalate": true
+}
